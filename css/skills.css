@@ -1,0 +1,110 @@
+/* =============================================
+   skills.css — Barras de habilidades y tags
+   CLEMENT by Napoleon
+   ============================================= */
+
+#skills {
+    background: var(--white);
+}
+
+/* ── Layout dos columnas ── */
+.skills-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+/* ── Título de grupo ── */
+.skill-group-title {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ash3);
+    margin-bottom: 2rem;
+}
+
+/* ── Item individual de skill ── */
+.skill-item {
+    margin-bottom: 1.8rem;
+}
+
+/* ── Fila nombre + porcentaje ── */
+.skill-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.skill-name {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.skill-pct {
+    font-size: 0.65rem;
+    color: var(--ash3);
+    letter-spacing: 0.1em;
+}
+
+/* ── Barra de progreso ── */
+.skill-bar {
+    height: 1px;
+    background: var(--ash2);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--ink);
+    width: 0;
+    /* JS anima via data-width */
+    transition: width 1.2s var(--ease-out);
+}
+
+/* ── Nube de tags de conocimiento ── */
+.tags-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--ash2);
+    color: var(--ash4);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.tag:hover {
+    background: var(--ink);
+    color: var(--white);
+    border-color: var(--ink);
+}
+
+/* ── Mobile: líneas más definidas ── */
+@media (max-width: 768px) {
+    .skills-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .skill-bar {
+        background: var(--ash3); /* #ADADAD — más oscuro que ash2 */
+    }
+
+    .tag {
+        border-color: var(--ash4); /* #888888 — borde más visible */
+        color: var(--ash4);
+    }
+}

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="CLEMENT by Napoleon — Portafolio de Carlos Napoleón, Staff Software Engineer especializado en Rust, bases de datos, IA y desarrollo web." />
+  <title>CLEMENT — by Napoleon</title>
+
+  <!-- Google Fonts: Inconsolata -->
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS modular -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/certifications.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">CLEMENT</a>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">Perfil</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════
+       MAIN
+       ═══════════════════════════════════ -->
+  <main>
+
+    <!-- ─── HERO ─── -->
+    <section id="hero">
+      <canvas id="three-canvas"></canvas>
+
+      <!-- ── Texto centrado sobre el objeto 3D ── -->
+      <div class="hero-3d-label anim-hidden">
+        <span class="hero-3d-main">CLEMENT</span>
+        <span class="hero-3d-sub">BY NAPOLEON</span>
+      </div>
+
+      <div class="hero-content anim-hidden">
+        <p class="hero-tag">Portafolio — El Salvador / 2025</p>
+
+        <h1 class="hero-title">
+          CLEMENT
+          <span class="subtitle-name">by Napoleon</span>
+        </h1>
+
+        <p class="hero-sub">
+          <span class="typewriter-wrap"><span id="typewriter"></span></span><br />
+          Rust · Base de Datos · IA · Desarrollo Web
+        </p>
+
+        <p class="hero-scroll">Scroll para explorar</p>
+      </div>
+    </section>
+
+    <div class="line-divider"></div>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about">
+      <p class="section-label anim-hidden">01 — Perfil</p>
+      <h2 class="section-title anim-hidden">Quién soy</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="anim-hidden">
+            Soy Carlos Napoleón, Staff Software Engineer especializado en Rust,
+            con experiencia construyendo sistemas robustos, eficientes y orientados
+            a rendimiento real.
+          </p>
+          <p class="anim-hidden">
+            Mi trabajo abarca diseño de bases de datos, integración de modelos de
+            inteligencia artificial y desarrollo web full-stack. Me interesa
+            resolver problemas difíciles con soluciones claras, mantenibles y
+            bien estructuradas.
+          </p>
+          <p class="anim-hidden">
+            Construyo desde los cimientos: entiendo el problema, diseño la
+            arquitectura correcta y escribo código que dura.
+          </p>
+        </div>
+
+        <div class="about-details anim-hidden">
+          <div class="detail-item">
+            <p class="detail-label">Perfil</p>
+            <p class="detail-value">Carlos Napoleón</p>
+          </div>
+          <div class="detail-item">
+            <p class="detail-label">Rol</p>
+            <p class="detail-value">Staff Software Engineer (Rust)</p>
+          </div>
+          <div class="detail-item">
+            <p class="detail-label">Marca Personal</p>
+            <p class="detail-value">Clement</p>
+          </div>
+          <div class="detail-item">
+            <p class="detail-label">Enfoque</p>
+            <p class="detail-value">Rust · Base de Datos · IA · Desarrollo Web</p>
+          </div>
+          <div class="detail-item">
+            <p class="detail-label">Ubicación</p>
+            <p class="detail-value">El Salvador</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="line-divider"></div>
+
+    <!-- ─── PROJECTS ─── -->
+    <section id="projects">
+      <p class="section-label anim-hidden">02 — Proyectos</p>
+      <h2 class="section-title anim-hidden">Trabajo destacado</h2>
+
+      <div class="projects-grid">
+
+        <!-- Proyecto 001 -->
+        <div class="project-card anim-hidden" data-ripple>
+          <div class="project-inner">
+            <p class="project-num">/ 001</p>
+            <h3 class="project-title">Motor de Base de Datos en Rust</h3>
+            <p class="project-desc">
+              Implementación de un motor de almacenamiento desde cero en Rust:
+              manejo de memoria, índices, transacciones y consultas con énfasis
+              en rendimiento y seguridad de tipos.
+            </p>
+            <div class="project-tags">
+              <span>Rust</span>
+              <span>Sistemas</span>
+              <span>Base de Datos</span>
+              <span>Rendimiento</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 002 -->
+        <div class="project-card anim-hidden" data-ripple>
+          <div class="project-inner">
+            <p class="project-num">/ 002</p>
+            <h3 class="project-title">API REST con Actix-Web y PostgreSQL</h3>
+            <p class="project-desc">
+              Backend de alto rendimiento construido en Rust usando Actix-Web,
+              con autenticación JWT, conexión a PostgreSQL y diseño orientado
+              a escalabilidad.
+            </p>
+            <div class="project-tags">
+              <span>Rust</span>
+              <span>Actix-Web</span>
+              <span>PostgreSQL</span>
+              <span>JWT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 003 -->
+        <div class="project-card anim-hidden" data-ripple>
+          <div class="project-inner">
+            <p class="project-num">/ 003</p>
+            <h3 class="project-title">Pipeline de Datos con Integración de IA</h3>
+            <p class="project-desc">
+              Sistema de procesamiento de datos que integra modelos de lenguaje
+              para clasificación y análisis automático, con pipeline modular
+              y almacenamiento eficiente.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>IA / LLM</span>
+              <span>ETL</span>
+              <span>Análisis de Datos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 004 -->
+        <div class="project-card anim-hidden" data-ripple>
+          <div class="project-inner">
+            <p class="project-num">/ 004</p>
+            <h3 class="project-title">Web App Full-Stack con Firebase</h3>
+            <p class="project-desc">
+              Aplicación web completa con autenticación, base de datos en tiempo
+              real, hosting y formularios dinámicos, construida con JavaScript
+              y Firebase.
+            </p>
+            <div class="project-tags">
+              <span>Firebase</span>
+              <span>JavaScript</span>
+              <span>HTML / CSS</span>
+              <span>Firestore</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 005 -->
+        <div class="project-card anim-hidden" data-ripple>
+          <div class="project-inner">
+            <p class="project-num">/ 005</p>
+            <h3 class="project-title">Sistema de Análisis y Regresión de Datos</h3>
+            <p class="project-desc">
+              Base de datos relacional con modelos de regresión para análisis
+              de satisfacción y comportamiento de usuarios, con visualización
+              de resultados e informes automatizados.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Base de Datos</span>
+              <span>Regresión</span>
+              <span>Visualización</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="line-divider"></div>
+
+    <!-- ─── SKILLS ─── -->
+    <section id="skills">
+      <p class="section-label anim-hidden">03 — Habilidades</p>
+      <h2 class="section-title anim-hidden">Herramientas & Tech</h2>
+
+      <div class="skills-layout">
+
+        <!-- Columna Lenguajes -->
+        <div class="skill-group anim-hidden">
+          <p class="skill-group-title">Lenguajes</p>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Rust</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Python</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">HTML / CSS</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">SQL</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="82"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Tecnologías & Áreas -->
+        <div class="skill-group anim-hidden">
+          <p class="skill-group-title">Tecnologías & Herramientas</p>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Actix-Web / Tokio</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="88"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">PostgreSQL / Firebase</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">GitHub / Git</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">IA / LLM Integration</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="78"></div>
+            </div>
+          </div>
+
+          <!-- Nube de tags -->
+          <div style="margin-top: 2.5rem;">
+            <p class="skill-group-title">Áreas de conocimiento</p>
+            <div class="tags-cloud">
+              <span class="tag">Sistemas de Bajo Nivel</span>
+              <span class="tag">Diseño de BD</span>
+              <span class="tag">APIs REST</span>
+              <span class="tag">Concurrencia</span>
+              <span class="tag">Inteligencia Artificial</span>
+              <span class="tag">Desarrollo Web</span>
+              <span class="tag">Análisis de Datos</span>
+              <span class="tag">Seguridad de Tipos</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="line-divider"></div>
+
+    <!-- ─── CERTIFICATIONS ─── -->
+    <section id="certifications">
+      <p class="section-label anim-hidden">04 — Formación</p>
+      <h2 class="section-title anim-hidden">Certificaciones</h2>
+
+      <div class="cert-list">
+
+        <!-- Cert 001 -->
+        <div class="cert-row anim-hidden">
+          <span class="cert-tag">AWS</span>
+          <div class="cert-body">
+            <h3 class="cert-name">AWS Certified Solutions Architect — Associate</h3>
+            <p class="cert-desc">Diseño de arquitecturas en la nube: alta disponibilidad, escalabilidad, seguridad y
+              optimización de costos en AWS.</p>
+            <p class="cert-provider">Amazon Web Services</p>
+          </div>
+          <p class="cert-year">2025</p>
+        </div>
+
+        <!-- Cert 002 -->
+        <div class="cert-row anim-hidden">
+          <span class="cert-tag">AWS</span>
+          <div class="cert-body">
+            <h3 class="cert-name">AWS Certified Developer — Associate</h3>
+            <p class="cert-desc">Desarrollo, despliegue y depuración de aplicaciones en AWS: Lambda, DynamoDB, API
+              Gateway y CI/CD pipelines.</p>
+            <p class="cert-provider">Amazon Web Services</p>
+          </div>
+          <p class="cert-year">2025</p>
+        </div>
+
+        <!-- Cert 003 -->
+        <div class="cert-row anim-hidden">
+          <span class="cert-tag">Rust</span>
+          <div class="cert-body">
+            <h3 class="cert-name">Rust Programming: The Complete Developer's Guide</h3>
+            <p class="cert-desc">Ownership, borrowing, lifetimes, traits, concurrencia segura y construcción de sistemas
+              de alto rendimiento en Rust.</p>
+            <p class="cert-provider">Zero To Mastery Academy</p>
+          </div>
+          <p class="cert-year">2023</p>
+        </div>
+
+        <!-- Cert 004 -->
+        <div class="cert-row anim-hidden">
+          <span class="cert-tag">IA</span>
+          <div class="cert-body">
+            <h3 class="cert-name">Machine Learning Specialization</h3>
+            <p class="cert-desc">Fundamentos de ML supervisado y no supervisado, redes neuronales, árboles de decisión y
+              buenas prácticas de IA aplicada.</p>
+            <p class="cert-provider">DeepLearning.AI</p>
+          </div>
+          <p class="cert-year">2025</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact">
+      <p class="section-label anim-hidden">05 — Contacto</p>
+      <h2 class="contact-title anim-hidden">Hablemos.</h2>
+      <p class="contact-sub anim-hidden">
+        Disponible para proyectos en Rust, diseño de sistemas, integración de IA
+        o desarrollo web. Si tienes un problema técnico que resolver con código
+        sólido, hablemos.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:cccalixo1998@gmail.com" class="contact-link anim-hidden" data-ripple>Email</a>
+        <a href="#" class="contact-link anim-hidden" data-ripple target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" class="contact-link anim-hidden" data-ripple target="_blank" rel="noopener">GitHub</a>
+        <a href="#" class="contact-link anim-hidden" data-ripple>Descargar CV</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════ -->
+  <footer>
+    <span>CLEMENT by Napoleon © 2025</span>
+    <span>Staff Software Engineer — El Salvador</span>
+  </footer>
+
+  <!-- ═══════════════════════════════════
+       CDNs (al final del body)
+       ═══════════════════════════════════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Entry point ES6 module -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

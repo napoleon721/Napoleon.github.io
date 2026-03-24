@@ -1,0 +1,132 @@
+/* =============================================
+   projects.css — Grid de proyectos y cards
+   CLEMENT by Napoleon
+   ============================================= */
+
+#projects {
+    background: var(--ash1);
+}
+
+/* ── Grid de proyectos ── */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5px;
+    background: var(--ash2);
+    border: 1px solid var(--ash2);
+}
+
+/* ── Card base ── */
+.project-card {
+    background: var(--ash1);
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* ── Overlay de hover (deslizamiento horizontal negro) ── */
+.project-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--ink);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s var(--ease-out);
+}
+
+.project-card:hover::after {
+    transform: scaleX(1);
+}
+
+/* ── Contenido de la card (sobre el overlay) ── */
+.project-inner {
+    position: relative;
+    z-index: 1;
+}
+
+/* ── Transición de colores al hover ── */
+.project-card:hover .project-num,
+.project-card:hover .project-title,
+.project-card:hover .project-desc {
+    color: var(--ash1);
+}
+
+.project-card:hover .project-tags span {
+    color: var(--ash1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ── Número de proyecto ── */
+.project-num {
+    font-size: 0.62rem;
+    letter-spacing: 0.3em;
+    color: var(--ash3);
+    margin-bottom: 2rem;
+    transition: color 0.3s;
+}
+
+/* ── Título de proyecto ── */
+.project-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--ink);
+    margin-bottom: 1rem;
+    transition: color 0.3s;
+}
+
+/* ── Descripción ── */
+.project-desc {
+    font-size: 0.85rem;
+    line-height: 1.75;
+    color: var(--ash4);
+    margin-bottom: 2rem;
+    transition: color 0.3s;
+}
+
+/* ── Tags ── */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tags span {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.8rem;
+    border: 1px solid var(--ash2);
+    color: var(--ash4);
+    transition: all 0.3s;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5px;
+    }
+
+    .project-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.15rem;
+    }
+
+    .project-desc {
+        font-size: 0.82rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-tags span {
+        font-size: 0.58rem;
+        padding: 0.3rem 0.7rem;
+        border-color: var(--ash3);
+    }
+}

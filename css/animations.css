@@ -1,0 +1,65 @@
+/* =============================================
+   animations.css — Keyframes globales
+   CLEMENT by Napoleon
+   ============================================= */
+
+/* ── Estado inicial de elementos animados por GSAP ── */
+.anim-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* ── Ripple click effect ── */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(0);
+    animation: rippleAnim 0.6s linear forwards;
+    pointer-events: none;
+    z-index: 10;
+}
+
+@keyframes rippleAnim {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* ── Parpadeo del cursor typewriter ── */
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: var(--accent);
+    }
+
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* ── Fade in genérico ── */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ── Float suave (uso auxiliar) ── */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}

@@ -1,0 +1,30 @@
+/* =============================================
+   variables.css — Design tokens
+   CLEMENT by Napoleon
+   ============================================= */
+
+:root {
+    /* ── Colores (cero saturados) ── */
+    --white: #FAFAF8;
+    --ash1: #F0F0EC;
+    --ash2: #E2E2DC;
+    --ash3: #ADADAD;
+    --ash4: #888888;
+    --dark: #1A1A1A;
+    --ink: #0D0D0D;
+    --accent: #3D3D3D;
+
+    /* ── Tipografía ── */
+    --font: 'Inconsolata', monospace;
+
+    /* ── Espaciado de sección ── */
+    --section-padding: 10rem 8vw;
+
+    /* ── Transiciones ── */
+    --ease-out: cubic-bezier(0.76, 0, 0.24, 1);
+
+    /* ── Z-indexes ── */
+    --z-navbar: 100;
+    --z-canvas: 0;
+    --z-content: 2;
+}
